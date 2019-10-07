@@ -6,7 +6,7 @@ namespace ToSClaimTrackingTool.Models.JsonData
 {
     public class SalemInfo
     {
-        private const string _fileName = "tosdata.txt";
+        private const string _filePath = "../../../ToSData/tosdata.json";
 
         public Dictionary<string, Role> RolesByName { get; set; }
         public Dictionary<int, Role> RolesById { get; set; }
@@ -22,9 +22,9 @@ namespace ToSClaimTrackingTool.Models.JsonData
             RoleGroupsByName = new Dictionary<string, RoleGroup>();
             RostersByName = new Dictionary<string, Roster>();
 
-            if (File.Exists(_fileName))
+            if (File.Exists(_filePath))
             {
-                var data = JsonConvert.DeserializeObject<SalemJsonData>(File.ReadAllText(_fileName));
+                var data = JsonConvert.DeserializeObject<SalemJsonData>(File.ReadAllText(_filePath));
                 data.TeamInfos.ForEach(Load);
                 data.RosterInfos.ForEach(Load);
             }
@@ -42,12 +42,7 @@ namespace ToSClaimTrackingTool.Models.JsonData
 
                     roleGroup.PossibleRoles.Add(role);
                     RolesByName.Add(role.Name, role);
-
-                    if (!RolesById.ContainsKey(role.Id)) //remove this once all role ids are mapped
-                    {
-                        RolesById.Add(role.Id, role);
-                    }
-                    
+                    RolesById.Add(role.Id, role);
                 }
 
                 RoleGroupsByName.Add(roleGroup.Name, roleGroup);
