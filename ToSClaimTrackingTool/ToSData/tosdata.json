@@ -1,0 +1,282 @@
+{
+  "TeamInfos": [
+    {
+      "Team": "Town",
+      "ColorName": "PaleGreen",
+      "RoleGroupInfos": [
+		{
+          "Name": "Jailor",
+		  "DisallowedInRT": true,
+          "RoleInfos": [
+            {
+		      "Id": 5,
+              "Name": "Jailor",
+			  "ShortName": "J",
+			  "IsUnique": true
+            }
+          ]
+        },
+        {
+          "Name": "Town Investigative",
+          "RoleInfos": [
+            {
+			  "Id": 4,
+              "Name": "Investigator",
+			  "ShortName": "INV"
+            },
+            {
+			  "Id": 10,
+              "Name": "Sheriff",
+			  "ShortName": "SHE"
+            },
+            {
+			  "Id": 6,
+              "Name": "Lookout",
+			  "ShortName": "LO"
+            },
+            {
+			  "Id": 11,
+              "Name": "Spy",
+			  "ShortName": "SPY"
+            }
+          ]
+        },
+		{
+          "Name": "Town Protective",
+          "RoleInfos": [
+            {
+			  "Id": 1,
+              "Name": "Bodyguard",
+			  "ShortName": "BG"
+            },
+            {
+			  "Id": 2,
+              "Name": "Doctor",
+			  "ShortName": "DOC"
+            }
+          ]
+        },
+		{
+          "Name": "Town Killing",
+          "RoleInfos": [
+            {
+			  "Id": 14,
+              "Name": "Veteran",
+			  "ShortName": "VET",
+			  "IsUnique": true
+            },
+            {
+			  "Id": 15,
+              "Name": "Vigilante",
+			  "ShortName": "VIG"
+            }
+          ]
+        },
+		{
+          "Name": "Town Support",
+          "RoleInfos": [
+            {
+			  "Id": 3,
+              "Name": "Escort",
+			  "ShortName": "ESC"
+            },
+            {
+			  "Id": 7,
+              "Name": "Mayor",
+			  "ShortName": "MAY",
+			  "IsUnique": true
+            },
+            {
+			  "Id": 8,
+              "Name": "Medium",
+			  "ShortName": "MED"
+            },
+            {
+			  "Id": 9,
+              "Name": "Retributionist",
+			  "ShortName": "RET",
+			  "IsUnique": true
+            },
+            {
+			  "Id": 12,
+              "Name": "Transporter",
+			  "ShortName": "TRN"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Team": "Mafia",
+      "ColorName": "Tomato",
+      "RoleGroupInfos": [
+		{
+          "Name": "Mafia",
+          "RoleInfos": [
+            {
+			  "Id": 16,
+              "Name": "Blackmailer",
+			  "ShortName": "BM"
+            },
+            {
+			  "Id": 17,
+              "Name": "Consigliere",
+			  "ShortName": "CSG"
+            },
+			{
+			  "Id": 18,
+              "Name": "Consort",
+			  "ShortName": "CON"
+            },
+			{
+			  "Id": 19,
+              "Name": "Disguiser",
+			  "ShortName": "DSG"
+            },
+			{
+			  "Id": 20,
+              "Name": "Forger",
+			  "ShortName": "FOR"
+            },
+			{
+			  "Id": 21,
+              "Name": "Framer",
+			  "ShortName": "FRA"
+            },
+			{
+			  "Id": 22,
+              "Name": "Godfather",
+			  "ShortName": "GF"
+            },
+			{
+			  "Id": 23,
+              "Name": "Janitor",
+			  "ShortName": "JAN"
+            },
+			{
+			  "Id": 24,
+              "Name": "Mafioso",
+			  "ShortName": "MAF"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Team": "Neutral",
+      "RoleGroupInfos": [
+        {
+          "Name": "Neutral Evil",
+          "RoleInfos": [
+            {
+			  "Id": 27,
+              "Name": "Executioner",
+			  "ShortName": "EXE",
+			  "ColorName": "LightGray"
+            },
+            {
+			  "Id": 28,
+              "Name": "Jester",
+			  "ShortName": "JE",
+              "ColorName": "Pink"
+            },
+            {
+			  "Id": 33,
+              "Name": "Witch",
+			  "ShortName": "WI",
+              "ColorName": "Purple"
+            }
+          ]
+        },
+		{
+          "Name": "Neutral Killing",
+          "RoleInfos": [
+            {
+			  "Id": 26,
+              "Name": "Arsonist",
+			  "ShortName": "ARS",
+              "ColorName": "Orange"
+            },
+            {
+			  "Id": 29,
+              "Name": "SerialKiller",
+			  "ShortName": "SK",
+              "ColorName": "Purple"
+            },
+            {
+			  "Id": 32,
+              "Name": "Werewolf",
+			  "ShortName": "WW",
+              "ColorName": "Brown"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "RosterInfos": [
+	{
+	  "Name": "Ranked",
+      "RoleSlotInfos": [
+	    {
+		  "PossibleRoleGroups": ["Jailor"]
+		},
+		{
+		  "ShortName": "TI",
+		  "PossibleRoleGroups": ["Town Investigative"]
+		},
+		{
+		  "ShortName": "TI",
+		  "PossibleRoleGroups": ["Town Investigative"]
+		},
+		{
+		  "ShortName": "TP",
+		  "PossibleRoleGroups": ["Town Protective"]
+		},
+		{
+		  "ShortName": "TK",
+		  "PossibleRoleGroups": ["Town Killing"]
+		},
+		{
+		  "ShortName": "TS",
+		  "PossibleRoleGroups": ["Town Support"]
+		},
+		{
+		  "Name": "Random Town",
+		  "ShortName": "RT",
+		  "PossibleRoleGroups": ["Town Investigative", "Town Protective", "Town Killing", "Town Support"]
+		},
+		{
+		  "Name": "Random Town",
+		  "ShortName": "RT",
+		  "PossibleRoleGroups": ["Town Investigative", "Town Protective", "Town Killing", "Town Support"]
+		},
+		{
+		  "Name": "Random Town",
+		  "ShortName": "RT",
+		  "PossibleRoleGroups": ["Town Investigative", "Town Protective", "Town Killing", "Town Support"]
+		},
+		{
+		  "PossibleRoleGroups": ["Mafia"]
+		},
+		{
+		  "PossibleRoleGroups": ["Mafia"]
+		},
+		{
+		  "PossibleRoleGroups": ["Mafia"]
+		},
+		{
+		  "PossibleRoleGroups": ["Mafia"]
+		},
+		{
+		  "ShortName": "NE",
+		  "PossibleRoleGroups": ["Neutral Evil"]
+		},
+		{
+		  "ShortName": "NK",
+		  "PossibleRoleGroups": ["Neutral Killing"]
+		}
+	  ]
+	}
+  ]
+}
